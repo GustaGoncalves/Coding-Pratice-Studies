@@ -1,0 +1,12 @@
+valorcasa=float(input('Digite o valor da casa R$'))
+sal=float(input('Digite o seu salário R$'))
+anospagar=int(input('Em quantos anos irá pagar? '))
+
+prestaçãomes=valorcasa/(anospagar*12)
+
+if prestaçãomes>=sal*0.30:
+    print('\033[31mEMPRÉSTIMO NEGADO\033[m')
+    print('O valor da prestação \033[36mEXCEDE 30%\033[m de seu salário')
+else:
+    print('\033[32mEMPRÉSTIMO APROVADO\033[m')
+    print('Ele ficará no valor de R${:.2f} ao mês'.format(prestaçãomes))

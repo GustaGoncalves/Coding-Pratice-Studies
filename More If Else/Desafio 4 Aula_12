@@ -1,0 +1,15 @@
+from datetime import date
+
+anonascimento=int(input('Digite o ano em que nasceu: '))
+idade=date.today().year-anonascimento
+
+if idade<=17 and idade>0:
+    print('Você ainda irá se alistar para serviço militar \033[36mFUTURAMENTE\033[m')
+    print('Ainda falta {} ano(s) para você se alistar'.format(18-idade))
+elif idade==18:
+    print('\033[33mESTÁ NA HORA\033[m de você se alistar para serviço militar')
+elif idade<=0:
+    print('\033[31mDATA DE NASCIMENTO INVÁLIDA!\033[m')
+else:
+    print('\033[31mJÁ PASSOU DO TEMPO\033[m para o seu alistamento')
+    print('Você passou do prazo em {} ano(s)'.format(idade-18))

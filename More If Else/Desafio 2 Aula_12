@@ -1,0 +1,14 @@
+valorconverter=int(input('Digite um valor para converter: '))
+print('[1] Para Binário')
+print('[2] Para Octal')
+print('[3] Para Hexadecimal')
+menuescolha=int(input('Para \033[36mQUAL BASE\033[m deseja converte-lo? '))
+
+if menuescolha==1:
+    print('O número {} em binário é {}'.format(valorconverter,bin(valorconverter)[2:]))
+elif menuescolha==2:
+    print('O número {} em octal é {}'.format(valorconverter,oct(valorconverter)[2:]))
+elif menuescolha==3:
+    print('O número {} em hexadecimal é {}'.format(valorconverter,hex(valorconverter)[2:]))
+else:
+    print('\033[31mOPÇÃO INVÁLIDA!\033[m')

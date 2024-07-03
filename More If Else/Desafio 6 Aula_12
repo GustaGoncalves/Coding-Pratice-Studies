@@ -1,0 +1,15 @@
+from datetime import date
+
+anonascimento=int(input('Digite o ano em que nasceu: '))
+idade=date.today().year-anonascimento
+
+if idade<=9:
+    print('O atleta se encontra na categoria MIRIM')
+elif idade<=14 and idade>9:
+    print('O atleta se encontra na categoria INFANTIL')   
+elif idade<=19 and idade>14:
+    print('O atleta se encontra na categoria JUNIOR')
+elif idade<=20 and idade>19:
+    print('O atleta se encontra na categoria SENIOR')
+else:
+    print('O atleta se encontra na categoria MASTER')

@@ -1,0 +1,8 @@
+num1=int(input('Digite um número: '))
+num2=int(input('Digite mais um número: '))
+if num1>num2:
+    print('O número {} é maior'.format(num1))
+elif num1<num2:
+    print('O número {} é maior'.format(num2))
+else:
+    print('Não existe valor maior, os dois são \033[36mIGUAIS\033[m')

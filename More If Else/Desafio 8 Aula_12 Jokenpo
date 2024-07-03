@@ -1,0 +1,47 @@
+import random
+from time import sleep
+print('='*21)
+print('{}Jokenpo{}'.format(' '*7,' '*7))
+print('='*21)
+sleep(1)
+print('Vamos jogar?')
+print('[1] SIM  [2] NÃO')
+jogar=int(input())
+if jogar==1:
+    print('O que você vai jogar?')
+    print('[1] PEDRA')
+    print('[2] PAPEL')
+    print('[3] TESOURA')
+    jogador=int(input())
+    computador=random.randint(1,3)
+    print('\033[36mPROCESSANDO. . .\033[m')
+    sleep(2)
+    print('JO')
+    sleep(0.5)
+    print('KEN')
+    sleep(0.5)
+    print('PO!!')
+    if jogador==computador:
+        print('Hm! Escolhemos a mesma coisa e deu \033[33mEMPATE\033[m')
+    elif jogador==1 and computador==3 or jogador==2 and computador==1 or jogador==3 and computador==2:
+        if computador==1:
+            print('Eu escolhi PEDRA e você PAPEL')
+        elif computador==2:
+            print('Eu escolhi PAPEL e você TESOURA')
+        elif computador==3:
+            print('Eu escolhi TESOURA e você PEDRA')
+        print('\033[32mPARABÉNS!\033[m Você venceu!')
+    elif jogador==1 and computador==2 or jogador==2 and computador==3 or jogador==3 and computador==1:
+        if computador==1:
+            print('Eu escolhi PEDRA e você TESOURA')
+        elif computador==2:
+            print('Eu escolhi PAPEL e você PEDRA')
+        elif computador==3:
+            print('Eu escolhi TESOURA e você PAPEL')
+        print('\033[31mQUE PENA!\033[m Você perdeu!')
+    else:
+        print('\033[31mOPÇÃO INVÁLIDA\033[m')
+elif jogar==2:
+    print('OK! Encerrando Programa. . .')
+else:
+    print('\033[31mOPÇÃO INVÁLIDA\033[m')

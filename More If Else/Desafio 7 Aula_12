@@ -1,0 +1,39 @@
+preçonormal=float(input('Digite o preço do produto R$ '))
+print('[1] Dinheiro/Cheque (À vista)')
+print('[2] Cartão')
+print('Qual a forma de pagamento?')
+print('Digite o número que corresponde a sua opção')
+formapgto=int(input())
+
+if formapgto==1:
+    print('Você receberá um \033[32mdesconto\033[m de 10% na compra')
+    print('O valor final do produto será R${:.2f}'.format(preçonormal-(preçonormal*0.10)))
+elif formapgto==2:
+    print('Deseja parcelar o produto?')
+    print('[1] SIM  [2]NÃO')
+    parcelar=int(input())
+    if parcelar==1:
+        print('Em quantas vezes deseja parcelar')
+        print('Uma taxa de 20% de juros será aplicada em mais de 2 parcelas')
+        qtdparcelas=int(input())
+        if qtdparcelas>2:
+            valorparcelado=(preçonormal+(preçonormal*0.20))/qtdparcelas
+            print('O valor de cada parcela ficará em R$ {:.2f}'.format(valorparcelado))
+            print('O valor final do produto será R$ {:.2f}'.format(valorparcelado*qtdparcelas))
+        elif qtdparcelas==2:
+            valorparcelado=preçonormal/qtdparcelas
+            print('O valor de cada parcela ficará em R$ {:.2f}'.format(valorparcelado))
+            print('O valor final do produto será R$ {:.2f}'.format(valorparcelado*qtdparcelas))
+        elif qtdparcelas==1:
+            print('Você receberá um \033[32mdesconto\033[m de 5% na compra')
+            print('O valor final do produto será R${:.2f}'.format(preçonormal-(preçonormal*0.05)))
+        else:
+            print('\033[31mQUANTIDADE INVÁLIDA\033[m')
+    elif parcelar==2:
+        print('Você receberá um \033[32mdesconto\033[m de 5% na compra')
+        print('O valor final do produto será R${:.2f}'.format(preçonormal-(preçonormal*0.05)))
+    else:
+        print('\033[31mOPÇÃO INVÁLIDA\033[m')
+else:
+    print('\033[31mOPÇÃO INVÁLIDA\033[m')    
+        
