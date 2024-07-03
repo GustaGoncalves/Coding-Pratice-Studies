@@ -1,0 +1,11 @@
+num=str(input('Digite um número de 0 a 9999: ')).strip()
+numsplited=num.split()
+numfixed=''.join(numsplited)
+print(numfixed)
+
+print('Unidade: {}'.format(numfixed[3]))
+print('Dezena: {}'.format(numfixed[2]))
+print('Centana: {}'.format(numfixed[1]))
+print('Milhar: {}'.format(numfixed[0]))
+
+

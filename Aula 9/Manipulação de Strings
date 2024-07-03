@@ -1,0 +1,21 @@
+frase='Curso em Vídeo Python'
+
+#String spliting and ranges
+print(frase[9])
+#Ranges, last caracter does not count as seen in 9:13 compared with 9:14
+print(frase[9:13])
+print(frase[9:14])
+print(frase[9:21])
+#The 2 at the end indicates the jump
+print(frase[9:21:2])
+#The same as 0:5. indicating a limit, but the starting point remains the start of the string
+print(frase[:5])
+#Indicates the starting point, with the end point being the end of the string itself
+print(frase[15:])
+#Following the previous rules, you can logic what this one does out. In case test and compare
+print(frase[9::3])
+#One print, massive text, multiple lines. I'm blown away, just use (""")
+print('''This text is massive, like damn is this thing huge
+look i'm even skipping lines like so, usually this would be a pain
+as multiple print's would be required. Well not anymore!
+Behold the triple apostrofe and it's power!''')

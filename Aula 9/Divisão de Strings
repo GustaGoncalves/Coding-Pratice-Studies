@@ -1,0 +1,15 @@
+frase='Curso em Vídeo Python'
+#Splits the string and turns it into a set/list, splits on the spaces
+#Each word has and index number starting at 0.
+print(frase.split())
+print()
+#Combines caracters of the string, can add specific spacers like the example
+print(" ".join(frase))
+print('-'.join(frase))
+print(''.join(frase.split()))
+print()
+#Can also join split strings like so
+#Note that on the previous examples the spacer is in between each caracter
+#While on this one it acts as spaces. This is caused by the split
+print('-'.join(frase.split()))
+print(' '.join(frase.split()))

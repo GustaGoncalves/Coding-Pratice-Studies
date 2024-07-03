@@ -1,0 +1,3 @@
+cidade=str(input('Digite o nome da cidade: ')).strip()
+cidademaiusc=cidade.upper()
+print('A cidade tem a palavra "Santo"? {}'.format(cidademaiusc[:5]=="SANTO"))

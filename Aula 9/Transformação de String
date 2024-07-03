@@ -1,0 +1,22 @@
+frase='Curso em Vídeo Python'
+frase2='   Aprenda Python  '
+
+#Replace the specified part with a different one. Sytax order is ('Old Text','New Text') NOTE: Case sensitive
+#IMPORTANT NOTE: Replace does not actually replace parts of the string, only on the specific instance
+#Strings are static and can't be easily, like so, altereds
+print(frase.replace('Python','Android'))
+#Puts specified string all on uppercase. For some reason a method (OOP related)
+print(frase.upper())
+#Puts string all o lower case. Also a method, for some reason :P
+print(frase.lower())
+#Capitalizes ONLY the first letter, all else is lower case. ALSO A METHOD WTF
+print(frase.capitalize())
+#Capitalizes first letter after spaces, like a title. WHY ARE ALL STRING FUNCTIONS OBJECT ORIENTED, THIS MAKES NO SENSE
+print(frase.title())
+#Removes spaces at the beginning and ending of strings, but not middle ones. Also OOP, ain't even surprised anymore
+print(frase2.strip())
+print(frase2)
+#Removes only last spaces
+print(frase2.rstrip())
+#Removes only first spaces, shit man all of these are object oriented, i'm so confused and intrigued as to why
+print(frase2.lstrip())
