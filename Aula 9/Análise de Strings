@@ -1,0 +1,16 @@
+frase='Curso em Vídeo Python'
+#Indicates length, in case, 21 caracters
+print(len(frase))
+#Counts specified letter, in case, "o". NOTE: It is case sensitive so this one only count lower case o's
+print(frase.count('o'))
+#.count can also count letters within specified intervals, note it does not count the last caracter
+print(frase.count('o',0,13))
+print(frase[0:13])
+#.find searches for specific parts of the string. NOTE: It shows where the specified string starts, not all of it's adresses
+print(frase.find('deo'))
+print(frase[11:14])
+#When the specified string does not exist in the analysed one, return is -1
+print(frase.find('Android'))
+#in checks for a specified string on the main string, if it exists on the main returns boolean value True/False
+print('Curso'in frase)
+print(type('Curso'in frase))
