@@ -1,0 +1,15 @@
+import random
+from time import sleep
+print('-=-'*20)
+print('Estou pensando em um número de 0 a 5!\nConsegue adivinhar qual é?')
+print('-=-'*20)
+num=int(input('Qual número você acha que é? '))
+print
+print('PROCESSANDO...')
+sleep(2)
+
+computador = random.randint(0,5)
+if num==computador:
+    print('\033[32mParabéns!\033[m {} é o número que eu pensei!'.format(num))
+else:
+    print('\033[31mQue pena!\033[m Eu pensei no número {}!'.format(computador))

@@ -1,0 +1,31 @@
+#Code for color change, which is ANSI
+#\033[0;33;44m
+#0, 1 ,4 and 7 for terminal styles
+#1 is bold
+#4 is underline
+#7 is negative
+#0 is none
+#Colors go from 30 to 37
+#Background colors go from 40 to 47
+#Syntax goes \033[style;text;backgroundm
+a=5
+b=4
+nome='Gustavo'
+cores = {'limpa':'\033[m',
+         'vermelho':'\033[31m',
+         'azulclaro':'\033[36m',
+         'cinza':'\033[37m'}
+print('\033[0;30;41mTeste\033[m')
+print('\033[1;37;46mTeste\033[m')
+print('\033[4;32;43mTeste\033[m')
+print('\033[7;35;44mTeste\033[m')
+print('\033[7;30mTeste\033[m')
+print('Os valores são \033[35m{}\033[m e também \033[7;31m{}\033[m'.format(a,b))
+
+print('Ola prazer em te conhecer {}{}{}!!'.format('\033[4;34m',nome,'\033[m'))
+print('Olá prazer em te conhecer \033[7;37m{}\033[m!!'.format(nome))
+print()
+print('Ola prazer em te conhecer {}{}{}!!'.format(cores['vermelho'],nome,cores['limpa']))
+print('Olá prazer em te conhecer \033[7;37m{}\033[m!!'.format(nome))
+
+print(19//2,' ',19%2)

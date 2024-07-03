@@ -1,0 +1,8 @@
+veloc=int(input('Digite a velocidade do carro: '))
+multa=(veloc-80)*7
+velocacima=veloc-80
+
+if veloc>80:
+    print('\033[31mVocê estava {} acima do limite e pagará de multa R${}\033[m'.format(velocacima,multa))
+else:
+    print('Você não estava acima do limite e não pagará multa.\033[32mParabéns!\033[m')

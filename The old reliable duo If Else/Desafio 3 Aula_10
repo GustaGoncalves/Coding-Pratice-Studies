@@ -1,0 +1,6 @@
+num=int(input('Digite um número: '))
+
+if num%2==0:
+    print('O número {} é \033[33mpar\033[m'.format(num))
+else:
+    print('O número {} é \033[31mímpar\033[m'.format(num))

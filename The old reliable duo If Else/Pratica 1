@@ -1,0 +1,6 @@
+nome=str(input('Qual é o seu nome: '))
+if nome.upper() == 'GUSTAVO':
+    print('Brother gostoso você viu')
+else:
+    print('Bom dia, {}'.format(nome))
+#End If

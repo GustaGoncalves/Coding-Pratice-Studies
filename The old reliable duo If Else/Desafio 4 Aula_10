@@ -1,0 +1,6 @@
+dist=int(input('Digite a distância da viagem(Km): '))
+
+if dist<=200:
+    print('O valor de uma viagem de {}Km é de R$ {:.2f}'.format(dist,dist*0.50))
+else:
+    print('O valor de uma viagem de {}Km é de R$ {:.2f}'.format(dist,dist*0.45))
