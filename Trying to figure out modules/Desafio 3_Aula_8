@@ -1,0 +1,5 @@
+from math import sin,cos,tan,radians,ceil
+
+ang=float(input('Digite o valor do ângulo: '))
+
+print('O valor do seno é {:.2f}\nO valor do cosseno é {:.2f}\n O valor da tangente é {:.2f}'.format(sin(radians(ang)),cos(radians(ang)),tan(radians(ang))))

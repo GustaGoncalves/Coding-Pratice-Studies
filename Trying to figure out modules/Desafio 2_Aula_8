@@ -1,0 +1,7 @@
+from math import pow,sqrt,hypot
+
+cat1=int(input('Digite o valor do primeiro cateto: '))
+cat2=int(input('Digite o valor do segunda cateto: '))
+hipo=hypot(cat1,cat2)
+
+print('A hipotenusa de um triângulo retângulo de {} por {} é {}'.format(cat1,cat2,hipo))
