@@ -1,0 +1,14 @@
+c=0
+totimpar=0
+totpar=0
+while c<10:
+    print(c,end=' ')
+    c+=1
+    if c%2==0:
+        totpar+=1
+    else:
+        totimpar+=1
+print()
+print(totpar)
+print(totimpar)
+print('Acabou')

@@ -1,0 +1,50 @@
+from time import sleep
+repetir=0
+num1=int(input('Primeiro Valor: '))
+num2=int(input('Segundo Valor: '))
+while repetir!=5:
+    print()
+    print('O que deseja realizar com os números?')
+    '''print('[1] Somar\n[2] Multiplicar\n[3] Maior\n[4] Novos Números\n[5] Sair do Programa')'''
+    print('''[1] Somar
+[2] Multiplicar
+[3] Maior
+[4] Novos Números
+[5] Sair do Programa''')
+    repetir=int(input())
+    if repetir==1:
+        soma=num1+num2
+        print('A soma de {} e {} é igual a {}'.format(num1,num2,soma))
+    elif repetir==2:
+        multi=num1*num2
+        print('O produto de {} e {} é igual a {}'.format(num1,num2,multi))
+    elif repetir==3:
+        if num1>num2:
+            print('O número {} é maior que {}'.format(num1,num2))
+        elif num2>num1:
+            print('O número {} é maior que {}'.format(num2,num1))
+        else:
+            print('Os números são iguais')
+    elif repetir==4:
+        print('Descartando valores',end='')
+        sleep(0.4)
+        print('.',end='')
+        sleep(0.4)
+        print('.',end='')
+        sleep(0.4)
+        print('.')
+        sleep(0.4)
+        print('Informe-os novamente!')
+        num1=int(input('Primeiro Valor: '))
+        num2=int(input('Segundo Valor: '))
+    elif repetir==5:
+        print('Encerrando programa',end='')
+        sleep(0.4)
+        print('.',end='')
+        sleep(0.4)
+        print('.',end='')
+        sleep(0.4)
+        print('.')
+        sleep(0.4)
+    else:
+        print('\033[31mOpção Inválida!\033[m\n\033[36mPor favor\033[m selecione uma opção \033[32málida\033[m')

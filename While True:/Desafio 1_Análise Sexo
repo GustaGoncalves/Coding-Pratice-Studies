@@ -1,0 +1,13 @@
+'''loop=1
+while loop==1:
+    sexo=str(input('Digite qual o seu sexo [M/F] ')).strip().upper()[0]
+    if sexo not in 'MmFf':
+        print('\033[31mResposta Inválida!\033[m Tente Novamente')
+    else:
+        loop=0
+idade=int(input('Digite a sua idade: '))'''
+
+sexo=str(input('Digite o seu sexo [M/F] ')).strip().lower()[0]
+while sexo not in 'MmFf':
+    sexo=str(input('\033[31mResposta Inválida!\033[m Tente Novamente\n'))
+print('Resposta registrada com sucesso!')
