@@ -1,0 +1,9 @@
+from time import sleep
+import emoji
+
+print('\033[36mCONTAGEM FINAL PARA OS FOGOS\033[m')
+sleep(1)
+for c in range (10,-1,-1):
+    print(c)
+    sleep(1)
+print('\033[32m{}FELIZ ANO NOVO!!{}\033[m'.format(emoji.emojize(':party_popper:'*2),emoji.emojize(':party_popper:'*2)))

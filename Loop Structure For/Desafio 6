@@ -1,0 +1,10 @@
+from time import sleep
+print('PROGRESSÃO ARITIMÉTICA')
+termo1=int(input('Digite o \033[36mprimeiro termo\033[m da P.A.: '))
+razao=int(input('Digite o valor da \033[36mrazão\033[m da P.A.: '))
+decimo=termo1+(10-1)*razao
+print('Calculando os 10 primeiros termos da P.A.')
+sleep(1)
+for c in range(termo1,decimo+razao, razao):
+    print(termo1,end=" ")
+    termo1+=razao

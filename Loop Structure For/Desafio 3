@@ -1,0 +1,11 @@
+from time import sleep
+soma=0
+print('='*36)
+print('{}SOMADOR DE NÙMEROS ÌMPARES{}'.format(' '*5,' '*5))
+print('='*36)
+print('Realizando soma dos números de ímpares de \033[36m1 a 500\033[m...')
+sleep(1)
+for c in range (1,501):
+    if c%3==0 and c%2==1:
+        soma+=c
+print('O valor total da soma é {}'.format(soma))

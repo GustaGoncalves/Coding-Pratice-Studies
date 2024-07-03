@@ -1,0 +1,11 @@
+frase=str(input('Digite uma frase: ')).strip().upper()
+palavras=frase.split()
+junto=''.join(palavras)
+inverso=''
+for letra in range(len(junto)-1,-1,-1):
+    inverso+=junto[letra]
+print('A frase digitada inversa fica\n\033[36m{}\033[m'.format(inverso))
+if inverso==junto:
+    print('A Frase digitada é um \033[33mPalíndromo\033[m')
+else:
+    print('A frase digitada \033[31mNão\033[m é um Palíndromo')
